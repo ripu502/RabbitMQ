@@ -1,0 +1,25 @@
+{
+  "name": "rabbitmq",
+  "version": "1.0.0",
+  "description": "Learning RabbitMQ",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon sender.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ripu502/RabbitMQ.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ripu502/RabbitMQ/issues"
+  },
+  "homepage": "https://github.com/ripu502/RabbitMQ#readme",
+  "dependencies": {
+    "amqplib": "^0.5.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
