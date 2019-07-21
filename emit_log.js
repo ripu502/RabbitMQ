@@ -18,9 +18,11 @@ amqp.connect('amqp://localhost', function (error0, connection) {
         channel.assertExchange(exchange, 'fanout', {
             durable: false
         });
-        
+
         // exhange is publishing the messges to all the queue which is 
-        // being created as the second parameter is '' this empty char
+        // being created as the second parameter is '' this empty queue
+        // '' is a place of key which is used to subscribe to limit messge
+        // blank means can subscribe to all 
         channel.publish(exchange, '', Buffer.from(msg));
         console.log(" [x] Sent %s", msg);
     });
